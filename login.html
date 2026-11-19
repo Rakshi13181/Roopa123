@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 id ="heading">Login Form</h2>
+        <div id ="form">
+            username:<input id ="name"><br><br>
+            password:<input type ="password"><br><br>
+            <button onclick="show()">Submit</button>
+        </div>
+        <div id ="display" style="display:none">
+        <h2>Welcome!</h2>
+        <p id ="result"></p>
+        </div>
+        <script> function show(){
+            let n = document.getElementById("name").value;
+            document.getElementById("form").style.display="none";
+            document.getElementById("heading").style.display="none";
+            document.getElementById("display").style.display="block";
+            document.getElementById("result").innerHTML=n;} 
+            </script>
+    </body>
+</html>
